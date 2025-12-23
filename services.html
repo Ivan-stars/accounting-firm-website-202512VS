@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Raymond C W Tam and Co.</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <!-- Font imports -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500&family=Noto+Sans+HK:wght@300;400;500&family=Montserrat:wght@600&family=Lato:wght@400&display=swap" rel="stylesheet">
+    <!-- CSS imports -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header id="site-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="会计服务公司标志">
+                </a>
+            </div>
+            <nav class="main-nav">
+                <button class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                    <li class="active has-submenu">
+                        <a href="services.html" data-i18n="nav_services">Services</a>
+                        <ul class="submenu">
+                            <li><a href="#audit" data-i18n="nav_audit">Audit & Assurance</a></li>
+                            <li><a href="#tax" data-i18n="nav_tax">Tax Planning</a></li>
+                            <li><a href="#consulting" data-i18n="nav_consulting">Business Consulting</a></li>
+                            <li><a href="#risk" data-i18n="nav_risk">Risk Management</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="about.html" data-i18n="nav_about">About Us</a>
+                        <ul class="submenu">
+                            <li><a href="about.html#company" data-i18n="nav_company_intro">Company Profile</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="contact.html" data-i18n="nav_contact">Contact</a>
+                        <ul class="submenu">
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="language-switcher">
+                <div class="current-lang">
+                    <img src="assets/images/flag-en.svg" alt="English" class="lang-flag">
+                    <span data-i18n="lang_en">English</span>
+                </div>
+                <ul class="lang-dropdown">
+                    <li data-lang="en"><img src="assets/images/flag-en.svg" alt="English" class="lang-flag"><span data-i18n="lang_en">English</span></li>
+                    <li data-lang="zh-CN"><img src="assets/images/flag-cn.svg" alt="简体中文" class="lang-flag"><span data-i18n="lang_zh_cn">简体中文</span></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <h1 data-i18n="nav_services">Services</h1>
+            <ul class="breadcrumb">
+                <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                <li data-i18n="nav_services">Services</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="services-overview">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="services_range">Service Range</h2>
+                <div class="separator"></div>
+            </div>
+            
+            <div class="service-circles">
+                <div class="service-circle">
+                    <a href="#audit" class="circle-link">
+                        <div class="circle-icon">
+                            <svg class="icon-audit" viewBox="0 0 24 24">
+                                <path d="M3 20V4h18v16H3zm2-2h14V6H5v12zm2-2h10v-2H7v2zm0-4h10v-2H7v2z"/>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="nav_audit">Audit & Assurance</h3>
+                    </a>
+                </div>
+                
+                <div class="service-circle">
+                    <a href="#tax" class="circle-link">
+                        <div class="circle-icon">
+                            <svg class="icon-tax" viewBox="0 0 24 24">
+                                <path d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2zm0 2c-4.418 0-8 3.582-8 8s3.582 8 8 8 8-3.582 8-8-3.582-8-8-8zm-3 3h2v6h-2V7zm4 0h2v6h-2V7z"/>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="nav_tax">Tax Planning</h3>
+                    </a>
+                </div>
+                
+                <div class="service-circle">
+                    <a href="#consulting" class="circle-link">
+                        <div class="circle-icon">
+                            <svg class="icon-consulting" viewBox="0 0 24 24">
+                                <path d="M21 6h-4V3h-2v3h-6V3H7v3H3v14h18V6zm-2 12H5V8h14v10zm-8-2h2v-2h-2v2zm-4 0h2v-2H7v2zm8 0h2v-2h-2v2z"/>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="nav_consulting">Business Consulting</h3>
+                    </a>
+                </div>
+                
+                <div class="service-circle">
+                    <a href="#risk" class="circle-link">
+                        <div class="circle-icon">
+                            <svg class="icon-risk" viewBox="0 0 24 24">
+                                <path d="M12 2L1 21h22L12 2zm0 4l7.53 13H4.47L12 6zm-1 4v4h2v-4h-2zm0 6v2h2v-2h-2z"/>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="nav_risk">Risk Management</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Audit & Assurance Services -->
+    <section id="audit" class="service-section">
+        <div class="container">
+            <div class="service-header">
+                <div class="service-icon">
+                    <svg class="icon-audit-lg" viewBox="0 0 24 24">
+                        <path d="M3 20V4h18v16H3zm2-2h14V6H5v12zm2-2h10v-2H7v2zm0-4h10v-2H7v2z"/>
+                    </svg>
+                </div>
+                <h2 data-i18n="audit_assurance_title">Audit & Assurance</h2>
+                <p data-i18n="audit_assurance_desc">We help Hong Kong businesses present clear, credible financial information. As HKICPA-licensed auditors, we follow Hong Kong Standards on Auditing and Assurance to deliver independent reports for statutory audits, internal control reviews, and forecast assurance. Our team knows Companies Ordinance timelines and regulatory expectations, so audits run on schedule, meet tax and filing needs, and strengthen transparency and investor confidence.</p>
+            </div>
+            
+            <div class="service-content">
+                <div class="service-grid">
+                    <div class="service-item">
+                        <h3 data-i18n="statutory_audit_title">Statutory Audit</h3>
+                        <p data-i18n="statutory_audit_desc">We perform statutory audits under HKICPA standards and IFRS. Our process spans planning, control assessment, substantive testing, and reporting so financial statements fairly reflect the business and meet Companies Ordinance deadlines. We tailor our work for startups and established groups, improving transparency and trust with regulators, investors, and banks.</p>
+                    </div>
+                    
+                    <div class="service-item">
+                        <h3 data-i18n="internal_audit_title">Internal Audit</h3>
+                        <p data-i18n="internal_audit_desc">We design internal audits aligned to IIA standards and Hong Kong rules. Beyond finance, we review operational, compliance, IT, and strategic risks, testing controls and processes to spot gaps early. Findings include practical fixes that strengthen governance, risk prevention, and board oversight for sustainable growth.</p>
+                    </div>
+                    
+                    <div class="service-item">
+                        <h3 data-i18n="special_audit_title">Special Purpose Audit</h3>
+                        <p data-i18n="special_audit_desc">For deals, loans, subsidies, or due diligence, we deliver focused audits built for the specific transaction. We follow HKICPA standards while balancing speed and quality, providing reliable evidence that reduces risk and supports negotiations or financing in Hong Kong’s fast-moving market.</p>
+                    </div>
+                    
+                    <div class="service-item">
+                        <h3 data-i18n="ipo_audit_title">IPO Preparation Audit</h3>
+                        <p data-i18n="ipo_audit_desc">Our IPO team knows HKEX rules and works end-to-end—from early financial due diligence and control reviews to listing document support. We emphasise both historic accuracy and post-listing compliance, coordinating with sponsors and regulators so companies address review points quickly and build investor confidence ahead of listing.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Tax Planning Services -->
+    <section id="tax" class="service-section">
+        <div class="container">
+            <div class="service-header">
+                <div class="service-icon">
+                    <svg class="icon-tax-lg" viewBox="0 0 24 24">
+                        <path d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2zm0 2c-4.418 0-8 3.582-8 8s3.582 8 8 8 8-3.582 8-8-3.582-8-8-8zm-3 3h2v6h-2V7zm4 0h2v6h-2V7z"/>
+                    </svg>
+                </div>
+                <h2 data-i18n="tax_planning_title">Tax Planning</h2>
+                <p data-i18n="tax_planning_desc">We optimise tax structures while staying compliant locally and internationally, helping clients lower tax costs and stay audit-ready. Our comprehensive tax solutions cover corporate tax planning, cross-border tax planning, personal tax advisory, and tax compliance services. We design efficient structures that align with Hong Kong Inland Revenue Ordinance incentives and double tax treaties, balance transfer pricing, and time income and expenses to improve cash flow. For executives and high-net-worth clients, we tailor compensation, residency, and succession plans. We also handle profits, salaries, and stamp duty filings, monitor Inland Revenue Department updates, and prepare responses during queries to minimise penalties.</p>
+            </div>
+            
+            <div class="service-content">
+                <div class="service-grid">
+                    <div class="service-item">
+                        <h3 data-i18n="tax_planning_1">Corporate Tax Planning</h3>
+                        <p data-i18n="tax_planning_1_desc">We use Hong Kong’s low-tax regime and Inland Revenue Ordinance incentives to design efficient structures, time income and expenses, and align transfer pricing with global rules. Plans stay compliant while improving cash flow for businesses of all sizes.</p>
+                    </div>
+                    
+                    <div class="service-item">
+                        <h3 data-i18n="tax_planning_2">Cross-border Tax Planning</h3>
+                        <p data-i18n="tax_planning_2_desc">Leveraging Hong Kong’s double tax treaties, we map efficient routes for investments, trading, and IP. We align transfer pricing with BEPS, coordinate with the Inland Revenue Department and overseas advisors, and keep clients updated on rule changes to cut cross-border tax costs and risks.</p>
+                    </div>
+                    
+                    <div class="service-item">
+                        <h3 data-i18n="tax_planning_3">Personal Tax Advisory</h3>
+                        <p data-i18n="tax_planning_3_desc">For executives and high-net-worth clients, we plan salaries tax, offshore income, residency implications, and succession. We tailor compensation and benefit structures for expatriates and cross-border roles so they remain compliant while optimising after-tax income.</p>
+                    </div>
+                    
+                    <div class="service-item">
+                        <h3 data-i18n="tax_planning_4">Tax Compliance Services</h3>
+                        <p data-i18n="tax_planning_4_desc">We handle profits, salaries, and stamp duty filings, monitor IRD updates, and run periodic tax health checks. When queries arise, we prepare responses and documentation to minimise penalties and disputes, keeping businesses compliant as transparency requirements rise.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Business Consulting Services -->
+    <section id="consulting" class="service-section">
+        <div class="container">
+            <div class="service-header">
+                <div class="service-icon">
+                    <svg class="icon-consulting-lg" viewBox="0 0 24 24">
+                        <path d="M21 6h-4V3h-2v3h-6V3H7v3H3v14h18V6zm-2 12H5V8h14v10zm-8-2h2v-2h-2v2zm-4 0h2v-2H7v2zm8 0h2v-2h-2v2z"/>
+                    </svg>
+                </div>
+                <h2 data-i18n="business_consulting_title">Business Consulting</h2>
+                <p data-i18n="business_consulting_desc">We provide practical advice on strategy, finance, and operations so your business can grow confidently in competitive markets. Our strategic business solutions cover business structure planning, business plan development, financial management optimization, and business process improvement. We design Hong Kong–appropriate group and shareholding structures that balance tax benefits, regulatory needs, and management efficiency. We craft concise, investor-ready plans that highlight Hong Kong and Asia-Pacific opportunities, streamline reporting and controls aligned with HKFRS/IFRS, and set up budgeting and cost control. Using best-practice process analysis, we pinpoint bottlenecks and redesign workflows for regional headquarters and cross-border teams while keeping global standards consistent.</p>
+            </div>
+            
+            <div class="service-content">
+                <div class="service-grid">
+                    <div class="service-item">
+                        <h3 data-i18n="business_consulting_1">Business Structure Planning</h3>
+                        <p data-i18n="business_consulting_1_desc">We design Hong Kong–appropriate group and shareholding structures that balance tax benefits, regulatory needs, and management efficiency. Plans support mainland firms going global and multinationals using Hong Kong as a hub, reducing costs and clarifying governance.</p>
+                    </div>
+                    
+                    <div class="service-item">
+                        <h3 data-i18n="business_consulting_2">Business Plan Development</h3>
+                        <p data-i18n="business_consulting_2_desc">We craft concise, investor-ready plans covering market analysis, positioning, financials, and risks, highlighting Hong Kong and Asia-Pacific opportunities. The focus is securing financing for startups, tech, and cross-border projects.</p>
+                    </div>
+                    
+                    <div class="service-item">
+                        <h3 data-i18n="business_consulting_3">Financial Management Optimization</h3>
+                        <p data-i18n="business_consulting_3_desc">We build reporting and control frameworks aligned with HKFRS/IFRS, streamline processes, and set up budgeting and cost control. For listed or multinational firms, we emphasise compliance, transparency, and training to strengthen decision-ready finance teams.</p>
+                    </div>
+                    
+                    <div class="service-item">
+                        <h3 data-i18n="business_consulting_4">Business Process Improvement</h3>
+                        <p data-i18n="business_consulting_4_desc">Using best-practice process analysis, we pinpoint bottlenecks and redesign workflows for efficiency and cost control. For regional HQs in Hong Kong, we align cross-border processes with local regulations and culture while keeping global standards consistent.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Risk Management Services -->
+    <section id="risk" class="service-section">
+        <div class="container">
+            <div class="service-header">
+                <div class="service-icon">
+                    <svg class="icon-risk-lg" viewBox="0 0 24 24">
+                        <path d="M12 2L1 21h22L12 2zm0 4l7.53 13H4.47L12 6zm-1 4v4h2v-4h-2zm0 6v2h2v-2h-2z"/>
+                    </svg>
+                </div>
+                <h2 data-i18n="risk_management_title">Risk Management</h2>
+                <p data-i18n="risk_management_desc">We help organisations spot, evaluate, and mitigate risks so they can operate securely and keep growing. Our comprehensive risk solutions cover risk assessment, internal control review, compliance monitoring, and risk mitigation strategies. We map strategic, financial, operational, and compliance risks into clear ratings and heat maps, design COSO-based controls aligned with Hong Kong regulatory expectations, and run compliance scans across securities, banking, insurance, data privacy, and AML. We build and rehearse crisis plans—especially for social media and reputation risk—supporting incident response, communications, and recovery so leadership can act with confidence and resume operations quickly.</p>
+            </div>
+            
+            <div class="service-content">
+                <div class="service-grid">
+                    <div class="service-item">
+                        <h3 data-i18n="risk_management_1">Risk Assessment</h3>
+                        <p data-i18n="risk_management_1_desc">We apply structured methodologies to map strategic, financial, operational, and compliance risks, creating clear ratings and heat maps. Recommendations reflect Hong Kong’s market and regulatory realities, giving leadership a solid basis for decisions and resource allocation.</p>
+                    </div>
+                    
+                    <div class="service-item">
+                        <h3 data-i18n="risk_management_2">Internal Control Review</h3>
+                        <p data-i18n="risk_management_2_desc">Based on COSO and local regulatory expectations, we design and test control frameworks, manuals, and key control points. Work is tailored for listed and regulated entities so controls prevent risks and support business growth.</p>
+                    </div>
+                    
+                    <div class="service-item">
+                        <h3 data-i18n="risk_management_3">Compliance Monitoring</h3>
+                        <p data-i18n="risk_management_3_desc">We monitor requirements across securities, banking, insurance, data privacy, and AML. Services include risk scans, training, and periodic reviews, with guidance for mainland and international firms entering Hong Kong to stay compliant and avoid penalties.</p>
+                    </div>
+                    
+                    <div class="service-item">
+                        <h3 data-i18n="risk_management_4">Risk Mitigation Strategies</h3>
+                        <p data-i18n="risk_management_4_desc">We build and rehearse crisis plans covering prevention, response, and communications, with special focus on social media and reputation risk in Hong Kong. During incidents we support media handling and recovery so operations resume quickly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Our Company</h4>
+                    <p data-i18n="footer_desc">Providing excellent accounting and tax services for 30 years, offering comprehensive financial solutions for businesses and individuals.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-i18n="footer_quick_links">Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html" data-i18n="footer_home">Home</a></li>
+                        <li><a href="services.html" data-i18n="footer_services">Services</a></li>
+                        <li><a href="about.html" data-i18n="footer_about">About Us</a></li>
+                        <li><a href="contact.html" data-i18n="footer_contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-i18n="footer_contact_info">Contact Information</h4>
+                    <address>
+                        <p><img src="assets/images/icon-location.svg" alt="地址"> Unit 658, 6/F., Building 19W, No. 19, Science Park, Hong Kong</p>
+                        <p><img src="assets/images/icon-phone.svg" alt="电话"> +852 98662300</p>
+                        <p><img src="assets/images/icon-email.svg" alt="邮箱"> raytam88@hotmail.com</p>
+                    </address>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p data-i18n="footer_copyright">&copy; 2024 Raymond C W Tam and Co. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/lang.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

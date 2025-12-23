@@ -1,0 +1,547 @@
+/* ================================== 
+   Responsive Styles
+   ================================== */
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    /* Container adjustment */
+    .container {
+        max-width: 960px;
+    }
+    
+    /* Typography adjustments */
+    h1 {
+        font-size: 2.2rem;
+    }
+    
+    h2 {
+        font-size: 1.8rem;
+    }
+    
+    h3 {
+        font-size: 1.5rem;
+    }
+    
+    .slide-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .slide-content p {
+        font-size: 1.3rem;
+    }
+    
+    /* Counter sizing */
+    .counter {
+        font-size: 2.5rem;
+    }
+    
+    /* Team grid adjustments */
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+    /* Certification spacing */
+    .certifications {
+        gap: 2rem;
+    }
+    
+    /* Footer grid adjustment */
+    .footer-grid {
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    /* Container adjustment */
+    .container {
+        max-width: 720px;
+    }
+    
+    
+    /* Hero carousel height reduction */
+    .hero-carousel {
+        height: 70vh;
+    }
+    
+    /* Services grid - 2 columns */
+    .services-grid,
+    .certificates-grid,
+    .tools-grid,
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Header adjustments */
+    .language-switcher {
+        margin-right: 1rem;
+    }
+    
+    .nav-links {
+        gap: 1.5rem;
+    }
+    
+    /* Smaller logo on mobile */
+    .logo img {
+        height: 42px;
+    }
+    
+    /* Adjust CTA text scaling */
+    .cta-content h2 {
+        font-size: 2rem;
+    }
+    
+    .cta-content p {
+        font-size: 1.1rem;
+    }
+    
+    /* Contact form layout adjustments */
+    .contact-form-section .form-wrapper {
+        width: 100%;
+    }
+    
+    /* Emergency methods layout */
+    .emergency-methods {
+        flex-direction: column;
+    }
+    
+    .method-item {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+    
+    /* Client carousel spacing */
+    .logo-item {
+        width: 150px;
+        margin: 0 1rem;
+    }
+    
+    /* Service Circles */
+    .service-circles {
+        justify-content: center;
+        gap: var(--spacing-lg);
+    }
+    
+    .service-circle {
+        flex: 0 0 45%;
+        margin-bottom: var(--spacing-lg);
+    }
+}
+
+/* Small devices (mobile landscape, less than 768px) */
+@media (max-width: 767.98px) {
+    /* Container adjustment */
+    .container {
+        max-width: 540px;
+    }
+    
+    /* Mobile menu toggle */
+    .mobile-menu-toggle {
+        display: block;
+    }
+    
+    /* Navigation mobile view */
+    .main-nav {
+        position: fixed;
+        top: 0;
+        right: -300px;
+        width: 280px;
+        height: 100vh;
+        background-color: var(--white);
+        box-shadow: var(--shadow-lg);
+        z-index: 1000;
+        transition: right 0.3s ease;
+        padding: 80px 20px 20px;
+        overflow-y: auto;
+    }
+    
+    .main-nav.active {
+        right: 0;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .nav-links li {
+        width: 100%;
+        border-bottom: 1px solid var(--light-gray);
+    }
+    
+    .nav-links a {
+        padding: 12px 0;
+    }
+    
+    /* Submenu mobile view */
+    .submenu {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        padding: 0;
+    }
+    
+    .has-submenu.show-submenu .submenu {
+        max-height: 500px;
+    }
+    
+    .submenu a {
+        padding-left: 1.5rem;
+        font-size: 0.9rem;
+    }
+    
+    /* Submenu toggle indicator */
+    .submenu-toggle {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 12px;
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+    }
+    
+    .submenu-toggle:before,
+    .submenu-toggle:after {
+        content: "";
+        position: absolute;
+        background-color: var(--primary-color);
+        transition: transform 0.3s ease;
+    }
+    
+    .submenu-toggle:before {
+        width: 12px;
+        height: 2px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .submenu-toggle:after {
+        width: 2px;
+        height: 12px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .has-submenu.show-submenu .submenu-toggle:after {
+        transform: translate(-50%, -50%) rotate(90deg);
+    }
+    
+    /* Hero carousel height reduction */
+    .hero-carousel {
+        height: 60vh;
+        margin-top: 70px;
+    }
+    
+    /* Services grid - 1 column */
+    .services-grid,
+    .certificates-grid,
+    .team-grid,
+    .tools-grid,
+    .benefits-grid,
+    .info-cards,
+    .transport-methods {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Footer grid adjustment */
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    /* Contact form grid */
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Adjust counter container for mobile */
+    .counter-container {
+        flex-wrap: wrap;
+    }
+    
+    .counter-item {
+        flex: 0 0 50%;
+    }
+    
+    /* Certifications spacing adjustment */
+    .certifications {
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+    
+    .cert-item {
+        flex: 0 0 calc(50% - 1rem);
+    }
+    
+    /* Service content layout */
+    .service-content {
+        padding: 1rem;
+    }
+    
+    /* Map and emergency sections */
+    .map-container iframe {
+        height: 300px;
+    }
+    
+    .emergency-notice {
+        flex-direction: column;
+    }
+    
+    .notice-icon {
+        margin-bottom: 1rem;
+    }
+    
+    /* About page adjustments */
+    .intro-content {
+        flex-direction: column;
+    }
+    
+    .intro-image,
+    .intro-text {
+        width: 100%;
+    }
+    
+    .intro-image {
+        margin-bottom: 1.5rem;
+    }
+    
+    /* Timeline adjustments */
+    .timeline-item {
+        flex-direction: column;
+        margin-bottom: 1.5rem;
+    }
+    
+    /* Team stats */
+    .team-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Service case study */
+    .case-content {
+        flex-direction: column;
+    }
+    
+    .case-image,
+    .case-text {
+        width: 100%;
+    }
+    
+    .case-image {
+        margin-bottom: 1.5rem;
+    }
+    
+    /* Service Circles */
+    .service-circles {
+        gap: var(--spacing-md);
+    }
+    
+    .service-circle {
+        flex: 0 0 45%;
+    }
+    
+    .circle-icon {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .circle-icon svg {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* Extra small devices (mobile portrait, less than 576px) */
+@media (max-width: 575.98px) {
+    /* Container adjustment */
+    .container {
+        padding: 0 15px;
+    }
+    
+    /* Typography adjustments */
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    h2 {
+        font-size: 1.6rem;
+    }
+    
+    h3 {
+        font-size: 1.4rem;
+    }
+    
+    /* Hero carousel adjustments */
+    .hero-carousel {
+        height: 50vh;
+    }
+    
+    
+    .slide-content h1 {
+        font-size: 2rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .slide-content p {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    /* Button size adjustment */
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    
+    /* Counter layout adjustment */
+    .counter-item {
+        flex: 0 0 100%;
+    }
+    
+    /* Team stats */
+    .team-stats,
+    .stat-item {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Certification items */
+    .cert-item {
+        flex: 0 0 100%;
+    }
+    
+    /* Contact info cards */
+    .info-card {
+        padding: 1.5rem 1rem;
+    }
+    
+    /* Language switcher adjustments */
+    .current-lang span {
+        display: none;
+    }
+    
+    .language-switcher {
+        margin-right: 0.5rem;
+    }
+    
+    /* Logo adjustment */
+    .logo img {
+        height: 35px;
+    }
+    
+    /* Header height */
+    #site-header .container {
+        height: 70px;
+    }
+    
+    /* Service approach steps */
+    .approach-steps {
+        padding: 0;
+    }
+    
+    .step {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .step-number {
+        margin: 0 auto 0.8rem;
+    }
+    
+    /* Contact form section */
+    .form-wrapper {
+        padding: 1.5rem;
+    }
+    
+    /* Service Circles */
+    .service-circle {
+        flex: 0 0 100%;
+        max-width: 180px;
+        margin-bottom: var(--spacing-md);
+    }
+    
+    .circle-icon {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .circle-icon svg {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .service-circle h3 {
+        font-size: 1rem;
+    }
+}
+
+/* Adjustments for tall mobile screens */
+@media (max-height: 700px) and (max-width: 767.98px) {
+    .hero-carousel {
+        height: 80vh;
+    }
+}
+
+/* Print styles */
+@media print {
+    #site-header, 
+    #site-footer, 
+    .contact-cta, 
+    .hero-carousel {
+        display: none;
+    }
+    
+    body {
+        font-size: 12pt;
+        line-height: 1.5;
+        color: #000;
+        background: #fff;
+    }
+    
+    .container {
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    
+    a {
+        color: #000;
+        text-decoration: underline;
+    }
+    
+    .page-banner {
+        padding: 2cm 0 1cm;
+        background: none;
+        color: #000;
+    }
+    
+    .page-banner h1 {
+        color: #000;
+    }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+    :root {
+        --primary-color: #004080;
+        --secondary-color: #D4A017;
+        --background-color: #FFFFFF;
+        --text-dark: #000000;
+        --text-medium: #333333;
+        --text-light: #555555;
+    }
+    
+    .service-card,
+    .info-card,
+    .form-wrapper,
+    .counter-item {
+        border: 1px solid #000;
+    }
+}

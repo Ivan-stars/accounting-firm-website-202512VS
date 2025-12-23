@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Raymond C W Tam and Co.</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <!-- Font imports -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500&family=Noto+Sans+HK:wght@300;400;500&family=Montserrat:wght@600&family=Lato:wght@400&display=swap" rel="stylesheet">
+    <!-- CSS imports -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header id="site-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="会计服务公司标志">
+                </a>
+            </div>
+            <nav class="main-nav">
+                <button class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                    <li class="has-submenu">
+                        <a href="services.html" data-i18n="nav_services">Services</a>
+                        <ul class="submenu">
+                            <li><a href="services.html#audit" data-i18n="nav_audit">Audit & Assurance</a></li>
+                            <li><a href="services.html#tax" data-i18n="nav_tax">Tax Planning</a></li>
+                            <li><a href="services.html#consulting" data-i18n="nav_consulting">Business Consulting</a></li>
+                            <li><a href="services.html#risk" data-i18n="nav_risk">Risk Management</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="about.html" data-i18n="nav_about">About Us</a>
+                        <ul class="submenu">
+                            <li><a href="about.html#company" data-i18n="nav_company_intro">Company Profile</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="language-switcher">
+                <div class="current-lang">
+                    <img src="assets/images/flag-en.svg" alt="English" class="lang-flag">
+                    <span data-i18n="lang_en">English</span>
+                </div>
+                <ul class="lang-dropdown">
+                    <li data-lang="en"><img src="assets/images/flag-en.svg" alt="English" class="lang-flag"><span data-i18n="lang_en">English</span></li>
+                    <li data-lang="zh-CN"><img src="assets/images/flag-cn.svg" alt="简体中文" class="lang-flag"><span data-i18n="lang_zh_cn">简体中文</span></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <h1 data-i18n="nav_contact">Our Company</h1>
+            <ul class="breadcrumb">
+                <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                <li data-i18n="nav_contact">Contact</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="contact-information">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="contact_title">Get in Touch</h2>
+                <div class="separator"></div>
+                <p data-i18n="contact_desc">We are here to help. Please fill out the form below to contact us.</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3 data-i18n="contact_office">Office Address</h3>
+                    <p data-i18n="contact_address">Unit 658, 6/F., Building 19W, No. 19, Science Park, Hong Kong</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3 data-i18n="contact_phone">Phone</h3>
+                    <p>+852 98662300</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3 data-i18n="contact_email">Email</h3>
+                    <p>raytam88@hotmail.com</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 data-i18n="contact_hours">Business Hours</h3>
+                    <p data-i18n="contact_weekday">Monday to Friday: 9:00 AM - 6:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Image Section -->
+    <section class="contact-image-section">
+        <div class="container">
+            <div class="contact-image-container">
+                <img src="assets/images/Contactus.jpg" alt="Contact Us" style="width: 100%; height: auto; display: block;">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Our Company</h4>
+                    <p data-i18n="footer_desc">Providing excellent accounting and tax services for 30 years, offering comprehensive financial solutions for businesses and individuals.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-i18n="footer_quick_links">Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html" data-i18n="footer_home">Home</a></li>
+                        <li><a href="services.html" data-i18n="footer_services">Services</a></li>
+                        <li><a href="about.html" data-i18n="footer_about">About Us</a></li>
+                        <li><a href="contact.html" data-i18n="footer_contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-i18n="footer_contact_info">Contact Information</h4>
+                    <address>
+                        <p><img src="assets/images/icon-location.svg" alt="地址"> Unit 658, 6/F., Building 19W, No. 19, Science Park, Hong Kong</p>
+                        <p><img src="assets/images/icon-phone.svg" alt="电话"> +852 98662300</p>
+                        <p><img src="assets/images/icon-email.svg" alt="邮箱"> raytam88@hotmail.com</p>
+                    </address>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p data-i18n="footer_copyright">&copy; 2024 Raymond C W Tam and Co. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/lang.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
